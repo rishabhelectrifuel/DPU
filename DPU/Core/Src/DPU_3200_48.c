@@ -97,7 +97,7 @@ void ControlVoltage(void)
 		 long_delay(100);
 
 	 }
-	 DpuVol=(FactorDpu*DPU_Vol_Count)/1000;
+	 DpuVol=(FactorDpu*DPU_Vol_Count/1000);
 	 if(SetVolt < 23000) SetVolt=23000;
 	 if(SetVolt > 56000) SetVolt=56000;
 
@@ -129,7 +129,7 @@ void ControlVoltage(void)
 			 TIM3->CCR4=duty;
 			 DPU_Average();
 			 long_delay(20);
-			 DpuVol=(FactorDpu*DPU_Vol_Count/1000);
+			 DpuVol=(FactorDpu*DPU_Vol_Count)/1000;
 
 
 		 }

@@ -477,9 +477,9 @@ void DPU_Display(void)
 		  Lcd_cursor(&lcd, 1,7);
 		  Lcd_string(&lcd, "DI:");
 	}
-	if(DpuVol < 26000)
+	if(DpuVol < 26000 && DpuVol > 17000)
 	{
-		   DpuVol=DpuVol+0;
+		   DpuVol=DpuVol-100;
 
 		  Lcd_cursor(&lcd, 0,10);
 		  Lcd_string(&lcd, DPU_Char_Vol);
@@ -487,18 +487,18 @@ void DPU_Display(void)
 		  Bitwise();
 		  Lcd_string(&lcd, DPU_Char_Vol);
 	}
-	else if(DpuVol < 42000)
+	else if(DpuVol < 42000 && DpuVol > 17000)
 	{
-		  DpuVol=DpuVol+0;
+		  DpuVol=DpuVol-100;
 		  Bitwise();
 		  Lcd_cursor(&lcd, 0,10);
 		  Lcd_string(&lcd, DPU_Char_Vol);
 		  Lcd_cursor(&lcd, 1,10);
 		  Lcd_string(&lcd, DPU_Char_Vol);
 	}
-	else if(DpuVol < 57000)
+	else if(DpuVol < 57000 && DpuVol > 17000)
 	{
-		  DpuVol=DpuVol+0;
+		  DpuVol=DpuVol-100;
 		  Bitwise();
 		  Lcd_cursor(&lcd, 0,10);
 		  Lcd_string(&lcd, DPU_Char_Vol);
