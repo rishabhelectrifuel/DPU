@@ -1,0 +1,5 @@
+../Core/Src/DPU_3200_48.c:21:6:DPU_Average	16	static
+../Core/Src/DPU_3200_48.c:35:6:setdpuvoltage	16	static
+../Core/Src/DPU_3200_48.c:84:6:ControlVoltage	8	static
+../Core/Src/DPU_3200_48.c:193:6:delay	16	static
+../Core/Src/DPU_3200_48.c:199:6:long_delay	16	static
